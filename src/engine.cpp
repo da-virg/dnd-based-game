@@ -67,3 +67,18 @@ class Weapon {
             return return_value;
         };
 };
+
+class Armor {
+    private: 
+
+        string name;
+        int ac;
+        int weight;
+
+    public: 
+
+        Armor(string name, int ac, int weight):
+        name(name), ac(ac), weight(weight) 
+        {}; 
+
+};
