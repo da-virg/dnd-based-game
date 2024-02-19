@@ -99,4 +99,13 @@ class Character {
         name(name), health(health), armor(armor), weapon(weapon), num_attacks(num_attacks), playable(playable) 
         {};
 
+        int roll_melee_damage()
+        {
+            int damage = 0;
+            for (int i = 0; i < num_attacks; i++) {
+                damage += weapon.roll_melee_damage();
+            }
+            return damage;
+        };
+
 };
