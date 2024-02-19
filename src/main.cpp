@@ -10,7 +10,7 @@ Weapon dagger = Weapon("dagger", Dice(1, 0, 1, 0, 0), 8, false, true);
 Weapon longbow = Weapon("longbow", Dice(3, 0, 0, 1, 0), 32, true, false);
 Weapon javelin = Weapon("javelin", Dice(2, 0, 1, 0, 0), 32, true, true);
 Armor  chainmail = Armor("chainmail", 16, 160);
-
+Character bob =  Character("bob", 32,Armor(chainmail), Weapon(longsword), 2, true);
 
 int main(int, char**){
     // Seed the random number generator with the current time

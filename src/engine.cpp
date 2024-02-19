@@ -82,3 +82,21 @@ class Armor {
         {}; 
 
 };
+
+class Character {
+    private:
+
+        string name;
+        int health;
+        Armor armor;
+        Weapon weapon;
+        int num_attacks;
+        bool playable;
+
+    public:
+
+        Character(string name, int health, Armor armor, Weapon weapon, int num_attacks, bool playable):
+        name(name), health(health), armor(armor), weapon(weapon), num_attacks(num_attacks), playable(playable) 
+        {};
+
+};
